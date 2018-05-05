@@ -9,11 +9,11 @@ from Main_file import *
 
 # configuration
 config = {
-  "apiKey": "AIzaSyDtA3QrK4WXUGjCyzgXi_6vm7wJypXwy7U",
-  "authDomain": "sbihackathon-cb717.firebaseapp.com",
-  "databaseURL": "https://sbihackathon-cb717.firebaseio.com",
-  "storageBucket": "sbihackathon-cb717.appspot.com",
-  "serviceAccount": "./sbi_firestore.json"
+  "apiKey": "insert your api key here",
+  "authDomain": "insert your authDomain here",
+  "databaseURL": "insert your databaseURL",
+  "storageBucket": "insert your storage bucket",
+  "serviceAccount": "insert your serviceAccount"
 }
 
 firebase = pyrebase.initialize_app(config)
