@@ -1,5 +1,8 @@
 # HNI-Customer-Identification-Using-Face-Recognition
-Every bank has a set of HNI(High net worth individual) customers. It's difficult for the bank staff to distinguish these customers from general customers. This project uses face recognition technology to identify HNI customers present in the bank. Whenever an HNI customer is detected, a picture of the customer taken via CCTV(Laptop's webcam is used in the code as of now) camera and also a picture from the database is sent to the bank staff via a notification generated on an android application. The bank staff then compares both these images and has two choices 1) Attend the customer. 2) Reject the notification(Useful if at all any non HNI customer is recognized falsely as an HNI customer).
+## Description
+Every bank has a set of HNI(High net worth individual) customers. It's difficult for the bank staff to distinguish these customers from general customers. This project uses face recognition technology to identify HNI customers present in the bank. Whenever an HNI customer is detected, a picture of the customer taken via CCTV(Laptop's webcam is used in the code as of now) camera and also a picture from the database is sent to the bank staff via a notification generated on an android application. The bank staff then compares both these images and has two choices 
+* Attend the customer. 
+* Reject the notification(Useful if at all any non HNI customer is recognized falsely as an HNI customer).
 
 
 ## The face recognition pipeline is explained as follows
@@ -8,3 +11,21 @@ Every bank has a set of HNI(High net worth individual) customers. It's difficult
 * Each face is passed through a siamese network which generates a 128 dimensional encodings of each detected face. These encodings are compared with encodings in the database and distance between two encodings is calculated. If the distance is <= 0.35, then it's a match and the image is added to the firebase database.
 
 Notification is sent to the android app using Firebase.
+
+## Dependencies
+* Tensorflow 1.4.0
+* Keras 2.1.2
+* OpenCV
+* pyrebase
+
+## Siamese Network Architechture
+* A pretrained inception model with 128 output units has been used to recognize faces(Since training a face recognition model from scratch needs too much computational power).
+* Loss function - Triplet Loss 
+
+## Database
+We used firebase as our project's databse.
+
+
+## Collaborators
+* Gagandeep Uppal
+* Rushabh Doshi
