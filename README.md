@@ -20,7 +20,7 @@ Notification is sent to the android app using Firebase.
 
 ## Description of Each Project File
 * firebased.py - Contains all functions that are used to query Firebase.
-* fr_utils.py - Contains helper funtions. PART OF THIS CODE IS USING CODE FROM VICTOR SY WANG: https://github.com/iwantooxxoox/Keras-OpenFace/blob/master/utils.py  and Coursera's deeplearning.ai course
+* fr_utils.py - Contains helper funtions. PART OF THIS CODE IS USING CODE FROM VICTOR SY WANG: https://github.com/iwantooxxoox/Keras-OpenFace/blob/master/utils.py  and Coursera's deeplearning.ai course(Pretrained Model).
 * inception_blocks_v2.py - Architechture of the inception model is defined here
 * keras_model.py - This file contains all the functions such as get_vector(), predict(), getData(), dumpData() and a thread to generate encodings of newly entered images of HNI customers and store them in the database.
 * Main_file.py - This file needs to be run to start the face recognition system.
